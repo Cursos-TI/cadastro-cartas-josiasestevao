@@ -13,7 +13,7 @@ while ((c = getchar()) != '\n' && c != EOF) {
 }
 
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
+  // Área para definição das variáveis para armazenar as propriedades das cidade 1
   
   // cidade 1
    char estado[2][50];
@@ -24,7 +24,7 @@ int main() {
    float PIB[2];    
    int pontos_turisticos[2];
 
-   // Área para entrada de dados
+   // Área para entrada de dados cidade 1
    printf("digite o nome do estado: \n");
    scanf("  %s", estado[0]);
    limpar_buffer();
@@ -58,17 +58,19 @@ int main() {
    limpar_buffer();
 
 
-  // Área para exibição dos dados da cidade
+  // Área para exibição dos dados da cidade 1
    printf("digite o nome do estado:  %s - codigo: %s \n", estado[0], codigo[0]);
    printf("digite o nome da cidade:  %s - populacao: %d \n", cidade[0], populacao[0]);
    printf("digite a area em metros quadrados:  %f - PIB: %f \n ", area[0], PIB[0]);
    printf("digite o numero de pontos turisticos:  %d \n", pontos_turisticos[0]);
+
+
    
 
   
-  // cidade 2
+  // Segue abaixo a estrutura do código para a cidade 2
 
-  // Área para entrada de dados
+  // Área para entrada de dados da cidade 2
    printf("digite o nome do estado: \n");
    scanf("  %s", estado[1]);
    limpar_buffer();
@@ -102,7 +104,7 @@ int main() {
    limpar_buffer();
 
 
-  // Área para exibição dos dados da cidade
+  // Área para exibição dos dados da cidade 2
    printf("digite o nome do estado:  %s - codigo: %s \n", estado[1], codigo[1]);
    printf("digite o nome da cidade:  %s - populacao: %d \n", cidade[1], populacao[1]);
    printf("digite a area em metros quadrados:  %f - PIB: %f \n ", area[1], PIB[1]);
