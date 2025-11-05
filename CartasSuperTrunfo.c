@@ -14,7 +14,9 @@ while ((c = getchar()) != '\n' && c != EOF) {
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidade 1
-  
+
+  printf("Insira os dados da cidade 1! \n");
+
   // cidade 1
    char estado[2][50];
    char codigo[2][50];
@@ -69,6 +71,8 @@ int main() {
 
   
   // Segue abaixo a estrutura do código para a cidade 2
+
+  printf("Insira os dados da cidade 2! \n");
 
   // Área para entrada de dados da cidade 2
    printf("digite o nome do estado: \n");
