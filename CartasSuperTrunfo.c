@@ -15,7 +15,7 @@ while ((c = getchar()) != '\n' && c != EOF) {
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidade 1
 
-  printf("Insira os dados da cidade 1! \n");
+  printf(" ***Insira os dados da cidade 1!*** \n");
 
   // cidade 1
    char estado[2][50];
@@ -26,9 +26,9 @@ int main() {
    float PIB[2];    
    int pontos_turisticos[2];
    
-  // Definindo os valores para densidade populacional cidade 1:
-  float populacao, area;
-  float quociente = populacao / area;
+  
+  
+  
 
    // Área para entrada de dados cidade 1
    printf("digite o nome do estado: \n");
@@ -63,23 +63,27 @@ int main() {
    scanf("  %d",  &pontos_turisticos[0]);
    limpar_buffer();
   
-   printf("a densidade populacional da cidade 1 é: \n")
-   scanff("    %f", &quociente[0]);
-   limpar_buffer();
+ 
+   
 
   // Área para exibição dos dados da cidade 1
    printf("digite o nome do estado:  %s - codigo: %s \n", estado[0], codigo[0]);
    printf("digite o nome da cidade:  %s - populacao: %d \n", cidade[0], populacao[0]);
    printf("digite a area em metros quadrados:  %f - PIB: %f \n ", area[0], PIB[0]);
    printf("digite o numero de pontos turisticos:  %d \n", pontos_turisticos[0]);
+  
 
-
-   
-
+   // Definindo o valor da variavel Densidade populacional:
+   float densidade_populacional[0] = populacao[0] / area[0];
+   printf("a densidade populacional é: %.2f\n", densidade_populacional);
+  
+   // Definindo o valor da varável PIB per capita:
+   float PIB_per_capita[0] = PIB[0] / populacao[0];
+   printf("o valor de PIB per capita é: %f\n", PIB_per_capita[0]);
   
   // Segue abaixo a estrutura do código para a cidade 2
 
-  printf("Insira os dados da cidade 2! \n");
+  printf("*** Insira os dados da cidade 2! *** \n");
 
   // Área para entrada de dados da cidade 2
    printf("digite o nome do estado: \n");
@@ -121,7 +125,13 @@ int main() {
    printf("digite a area em metros quadrados:  %f - PIB: %f \n ", area[1], PIB[1]);
    printf("digite o numero de pontos turisticos:  %d \n", pontos_turisticos[1]);
    
+  // Definindo o valor da variavel Densidade populacional:
+  float densidade_populacional[1] = populacao[1] / area[1];
+  printf("a densidade populacional é:  %f", densidade_populacional[1]);
 
+  // Definindo o valor da variável PIB per capita:
+  float PIB_per_capita[1] = PIB[1] / populacao[1];
+  printf("o valor de PIB per capita é:  %f\n", PIB_per_capita[1]);
 
 return 0;
 
