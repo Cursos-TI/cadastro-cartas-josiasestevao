@@ -25,6 +25,10 @@ int main() {
    float area[2];   
    float PIB[2];    
    int pontos_turisticos[2];
+   
+  // Definindo os valores para densidade populacional cidade 1:
+  float populacao, area;
+  float quociente = populacao / area;
 
    // Área para entrada de dados cidade 1
    printf("digite o nome do estado: \n");
@@ -58,7 +62,10 @@ int main() {
    printf("digite a quantidade de pontos turisticos: \n");
    scanf("  %d",  &pontos_turisticos[0]);
    limpar_buffer();
-
+  
+   printf("a densidade populacional da cidade 1 é: \n")
+   scanff("    %f", &quociente[0]);
+   limpar_buffer();
 
   // Área para exibição dos dados da cidade 1
    printf("digite o nome do estado:  %s - codigo: %s \n", estado[0], codigo[0]);
